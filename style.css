@@ -1,0 +1,175 @@
+:root{
+    --layout-mobile:375px;
+    --layout-desktop:1440px;
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --neutral-very-pale-blue:hsl(225, 100%, 98%);
+    --neutral-desaturated-blue:hsl(224,23%,55%);
+    --neutral-dark-blue:hsl(223,47%,23%);
+    --font-family:'Red Hat Display', sans-serif;
+}
+
+body{
+    background-color: var(--primary-pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}   
+
+body p {
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    margin: 5% 0px;
+}
+
+.box{
+    position: absolute;
+    width: 25%;
+    height: 670px;
+    background-color:white;
+    border-radius: 6%;
+    box-shadow: 0px 10px 25px 5px rgba(0,0,0,0.2);
+}
+
+.hero-section{
+    height: auto;
+
+}
+
+.hero-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0% 0%;
+}
+
+.header{
+    font-family: var(--font-family);
+    font-weight: 900px;
+    text-align: center;
+}
+
+.head-section{
+    margin-top: 5%;
+}
+
+.head-section p {
+    font-family: var(--font-family);
+    font-weight: 300;
+    text-align: center;
+    padding: 0px 15%;
+}
+
+.plan-section{
+    width: auto;
+    margin: 20px 15px;
+    height: 90px;
+    background-color:  var(--neutral-very-pale-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    margin-bottom: 5%;
+}
+
+.plan-section .text{
+    flex-direction: column;
+    align-self: center;
+    margin: 0px 5%;
+}
+
+.text h4{
+    margin: 0px;
+    font-weight: 500px;
+}
+
+.text p {
+    margin:5% 0px ;
+    font-weight: 300px;
+}
+
+.plan-section a{
+    text-align: end;
+    margin-right: 15px;
+    font-weight: 500px;
+}
+
+.plan-section img{
+    height: 3rem;
+    margin-left: 5%;
+}
+
+.proceed{
+    cursor: pointer;
+    margin-top: 10%;
+    height: 50px;
+    width: 75%;
+    background-color:  var(--primary-bright-blue);
+    margin: 0px auto;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    color: white;
+    border: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 8px 18px 0px rgba(56, 41, 224, 0.4);
+}
+
+.proceed p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cancel a{
+    margin-top: 30px;
+    font-family: var(--font-family);
+    text-decoration: none;
+    color: var(--neutral-desaturated-blue);
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+.attribution {
+    color :black;
+    height: 20px;
+    width: auto;
+    margin-top: 700px;
+}
+
+@media (max-width: 425px) {
+    .box {
+        width: 85% !important; 
+        margin-top: 10px !important;
+        height:590px !important;
+    }
+
+    .plan-section{
+        width: auto;
+        margin: 20px 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .box {
+        width: 35%;
+        height: 600px;
+    }
+    .plan-section{
+        width: auto;
+        margin: 20px 15px;
+    }
+}
