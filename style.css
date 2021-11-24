@@ -143,6 +143,13 @@ a {
     text-decoration: none;
 }
 
+.attribution {
+    color :black;
+    height: 20px;
+    width: auto;
+    margin-top: 700px;
+}
+
 @media (max-width: 425px) {
     .box {
         width: 85% !important; 
